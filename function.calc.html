@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+    <title>javascript</title>
+    <script type="text/javascript" src="js/function.calc.js"></script>
+    </head>
+    <body>
+        <h1 id="add"> MATH</h1>
+        <label>Addition</label>
+        <input id="add1" type="number">
+        <label>+</label>
+        <input id="add2" type="number">
+        <label>=</label>
+        <input id="sum" type="number" readonly>
+        <button onclick= "let result = calc(document.getElementById("add1").value,
+                           document.getElementById("add2").value);
+                        document.getElementById('sum').value=result;">add </button>
+         <p>
+            <label> Subtraction</label>
+        <input id="sub3" type="number">
+        <label>-</label>
+        <input id="sub4" type="number">
+        <label>=</label>
+        <input id="diff" type="number" readonly>
+        <button onclick="subtraction()">subs</button>
+         </p>
+         <p>
+            <label> Multiplication</label>
+        <input id="mul5" type="number">
+        <label>*</label>
+        <input id="mul6" type="number">
+        <label>=</label>
+        <input id="product" type="number" readonly>
+        <button onclick="multiplication()">mul</button>
+         </p>
+         <p>
+            <label>division</label>
+        <input id="div7" type="number">
+        <label>/</label>
+        <input id="div8" type="number">
+        <label>=</label>
+        <input id="quotient" type="number" readonly>
+        <button onclick="division()">div</button>
+         </p>
+    </body>
+</html>
